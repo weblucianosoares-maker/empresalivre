@@ -33,7 +33,7 @@ const SCHEDULING_URL = "https://cal.com/felipe-guimaraes-u28n6i/sessao-diagnosti
 
 // Imagem alterada para representar liberdade (paisagem vasta/montanha)
 const HERO_IMAGE_URL = "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=1920";
-const MENTOR_IMAGE_URL = "/felipe-guimaraes.png";
+const MENTOR_IMAGE_URL = "/felipe-guimaraes.jpg";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
