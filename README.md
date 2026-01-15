@@ -22,13 +22,7 @@ git push origin main
 1. Acesse [vercel.com](https://vercel.com) e faça login
 2. Clique em "Add New Project"
 3. Importe seu repositório do GitHub
-4. Configure as variáveis de ambiente (veja abaixo)
-5. Clique em "Deploy"
-
-### Passo 3: Configurar Variáveis de Ambiente
-No painel da Vercel, adicione a seguinte variável:
-- **Nome:** `GEMINI_API_KEY`
-- **Valor:** Sua chave da API Gemini (obtenha em https://aistudio.google.com/app/apikey)
+4. Clique em "Deploy"
 
 ## 💻 Executar Localmente
 
@@ -39,19 +33,12 @@ No painel da Vercel, adicione a seguinte variável:
    npm install
    ```
 
-2. **Configurar variáveis de ambiente:**
-   - Copie o arquivo `.env.example` para `.env.local`
-   - Adicione sua chave da API Gemini no arquivo `.env.local`:
-     ```
-     GEMINI_API_KEY=sua_chave_aqui
-     ```
-
-3. **Executar o servidor de desenvolvimento:**
+2. **Executar o servidor de desenvolvimento:**
    ```bash
    npm run dev
    ```
 
-4. **Acessar a aplicação:**
+3. **Acessar a aplicação:**
    - Abra http://localhost:3000 no navegador
 
 ## 🔨 Scripts Disponíveis
@@ -66,8 +53,3 @@ No painel da Vercel, adicione a seguinte variável:
 - **TypeScript** - Tipagem estática
 - **Vite** - Build tool e dev server
 - **Lucide React** - Ícones
-- **Google Gemini API** - IA para processamento de formulários
-
-## 🔒 Segurança
-
-⚠️ **Importante:** Nunca commite o arquivo `.env.local` no repositório. Ele já está incluído no `.gitignore` para sua segurança.
