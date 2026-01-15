@@ -20,7 +20,8 @@ import {
   Lightbulb,
   ListFilter,
   Check,
-  Send
+  Send,
+  Instagram
 } from 'lucide-react';
 
 // --- Constants & Types ---
