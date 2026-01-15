@@ -33,7 +33,7 @@ const SCHEDULING_URL = "https://cal.com/felipe-guimaraes-u28n6i/sessao-diagnosti
 
 // Imagem alterada para representar liberdade (paisagem vasta/montanha)
 const HERO_IMAGE_URL = "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=1920";
-const MENTOR_IMAGE_URL = "https://picsum.photos/800/800"; // Placeholder for executive photo
+const MENTOR_IMAGE_URL = "/felipe-guimaraes.png";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -718,73 +718,76 @@ const App: React.FC = () => {
       {/* SEÇÃO 4: AUTORIDADE */}
       <section className="py-20 bg-gradient-to-br from-gray-900 to-black overflow-hidden">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          {/* Texto centralizado sem imagem */}
-          <div className="w-full">
-            {/* REMOVIDO: <span className="text-premium-gold...">O Mentor</span> */}
-
-            <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
-              QUEM VAI CONDUZIR O SEU DIAGNÓSTICO?
-            </h2>
-
-            <p className="text-premium-gold text-lg md:text-xl font-medium mb-8 max-w-3xl mx-auto">
-              A experiência de grandes corporações, traduzida para a realidade do seu negócio.
-            </p>
-
-            <h3 className="text-2xl text-white font-medium mb-8 flex flex-col md:flex-row items-center justify-center gap-2">
-              Felipe Guimarães
-              <span className="text-gray-500 text-base font-normal block md:inline md:ml-2">
-                | Especialista em Gestão & Estratégia
-              </span>
-            </h3>
-
-            <div className="space-y-6 text-gray-300 leading-relaxed text-lg text-left md:text-center max-w-3xl mx-auto">
-              <p>
-                Felipe Guimarães não é um teórico de palco. Sua bagagem foi construída no campo de batalha de operações bilionárias.
-              </p>
-              <p>
-                Com passagens estratégicas por gigantes como Itaú, C&A, Suzano e Will Bank, Felipe liderou processos em ambientes de altíssima exigência, onde um erro de gestão custa milhões.
-              </p>
-              <p>
-                Após +15 anos unindo o rigor corporativo ao dinamismo do empreendedorismo, ele decodificou o padrão que separa empresas que crescem daquelas que apenas incham.
-              </p>
-              <p>
-                Hoje, como mentor de mais de 1.000 empresários, ele aplica um método próprio focado em um único objetivo: Construir empresas fortes que não dependam de donos reféns.
-              </p>
+          <div className="flex flex-col md:flex-row items-center gap-12 mb-12">
+            <div className="w-full md:w-1/2 flex justify-center">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-premium-gold/20 rounded-2xl blur-xl animate-pulse"></div>
+                <img
+                  src={MENTOR_IMAGE_URL}
+                  alt="Felipe Guimarães"
+                  className="relative w-full max-w-sm rounded-2xl shadow-2xl border-2 border-premium-gold/30 object-cover"
+                />
+              </div>
             </div>
-
-            {/* Bullets de Autoridade */}
-            <div className="mt-10 grid md:grid-cols-2 gap-6 text-left max-w-3xl mx-auto">
-              <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
-                <p className="text-gray-300 text-sm md:text-base">
-                  <span className="text-premium-green font-bold block mb-1">✅ Background de Elite:</span>
-                  Liderança forjada em multinacionais de escala global.
+            <div className="w-full md:w-1/2 text-left">
+              <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
+                QUEM VAI CONDUZIR O SEU DIAGNÓSTICO?
+              </h2>
+              <p className="text-premium-gold text-lg md:text-xl font-medium mb-6">
+                A experiência de grandes corporações, traduzida para a realidade do seu negócio.
+              </p>
+              <h3 className="text-2xl text-white font-medium mb-4">
+                Felipe Guimarães
+                <span className="text-gray-500 text-base font-normal block md:inline md:ml-2">
+                  | Especialista em Gestão & Estratégia
+                </span>
+              </h3>
+              <div className="space-y-4 text-gray-300 leading-relaxed text-base">
+                <p>
+                  Felipe Guimarães não é um teórico de palco. Sua bagagem foi construída no campo de batalha de operações bilionárias.
                 </p>
-              </div>
-              <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
-                <p className="text-gray-300 text-sm md:text-base">
-                  <span className="text-premium-green font-bold block mb-1">✅ Metodologia Validada:</span>
-                  Criador do método Empresa Livre, aplicado em centenas de nichos diferentes.
+                <p>
+                  Com passagens estratégicas por gigantes como Itaú, C&A, Suzano e Will Bank, Felipe liderou processos em ambientes de altíssima exigência.
                 </p>
-              </div>
-              <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
-                <p className="text-gray-300 text-sm md:text-base">
-                  <span className="text-premium-green font-bold block mb-1">✅ Foco em Liberdade:</span>
-                  Especialista em tirar o dono do operacional sem derrubar o faturamento.
-                </p>
-              </div>
-              <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
-                <p className="text-gray-300 text-sm md:text-base">
-                  <span className="text-premium-green font-bold block mb-1">✅ Visão Estratégica:</span>
-                  Une processos, tecnologia e comportamento humano para gerar lucro e leveza.
+                <p>
+                  Hoje, como mentor de mais de 1.000 empresários, ele aplica um método próprio para construir empresas fortes que não dependam de donos reféns.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="mt-12 text-center">
-              <Button onClick={scrollToApply}>
-                QUERO MINHA SESSÃO ESTRATÉGICA
-              </Button>
+          {/* Bullets de Autoridade */}
+          <div className="mt-10 grid md:grid-cols-2 gap-6 text-left max-w-3xl mx-auto">
+            <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
+              <p className="text-gray-300 text-sm md:text-base">
+                <span className="text-premium-green font-bold block mb-1">✅ Background de Elite:</span>
+                Liderança forjada em multinacionais de escala global.
+              </p>
             </div>
+            <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
+              <p className="text-gray-300 text-sm md:text-base">
+                <span className="text-premium-green font-bold block mb-1">✅ Metodologia Validada:</span>
+                Criador do método Empresa Livre, aplicado em centenas de nichos diferentes.
+              </p>
+            </div>
+            <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
+              <p className="text-gray-300 text-sm md:text-base">
+                <span className="text-premium-green font-bold block mb-1">✅ Foco em Liberdade:</span>
+                Especialista em tirar o dono do operacional sem derrubar o faturamento.
+              </p>
+            </div>
+            <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
+              <p className="text-gray-300 text-sm md:text-base">
+                <span className="text-premium-green font-bold block mb-1">✅ Visão Estratégica:</span>
+                Une processos, tecnologia e comportamento humano para gerar lucro e leveza.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Button onClick={scrollToApply}>
+              QUERO MINHA SESSÃO ESTRATÉGICA
+            </Button>
           </div>
         </div>
       </section>
@@ -843,7 +846,6 @@ const App: React.FC = () => {
             Preencha a aplicação abaixo para vermos se você se qualifica.
           </p>
 
-          {/* Render Application Form */}
           <ApplicationForm />
 
           <p className="mt-8 text-gray-500 text-sm">
@@ -852,7 +854,6 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-8 bg-black border-t border-gray-900 text-center text-gray-600 text-sm">
         <div className="container mx-auto px-4">
           <p>&copy; 2025 Movimento Empresa Livre • Todos os direitos reservados</p>
